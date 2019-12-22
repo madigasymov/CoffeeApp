@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_back">
+
+    <TextView
+        android:id="@+id/txt_hi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorTxt"
+        android:textStyle="bold"
+        android:text="Hi, "/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorTxt"
+        android:textStyle="bold"
+        android:text="What you want?"/>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="30dp">
+
+        <RadioButton
+            android:id="@+id/rbCoffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Coffee"/>
+
+        <RadioButton
+            android:id="@+id/rbTea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Tea"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtCoffeeTypes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorTxt"
+        android:textStyle="bold"
+        android:text="Choose your Coffee:"
+        android:visibility="gone"/>
+
+    <RadioGroup
+        android:id="@+id/rgCoffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/cap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="Cappuccino"/>
+
+            <RadioButton
+                android:id="@+id/lat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="Latte"/>
+
+            <RadioButton
+                android:id="@+id/ame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="Americano"/>
+
+            <RadioButton
+                android:id="@+id/esp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="Espresso"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtTeaTypes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorTxt"
+        android:textStyle="bold"
+        android:text="Choose your Tea:"
+        android:visibility="gone"/>
+
+    <RadioGroup
+        android:id="@+id/rgTea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/blackTea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Black"/>
+
+        <RadioButton
+            android:id="@+id/greenTea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Green"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtTeaAdds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorTxt"
+        android:textStyle="bold"
+        android:text="What additions you want?"/>
+
+    <LinearLayout
+        android:id="@+id/teaAdds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sugar"/>
+
+        <CheckBox
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Lemon"/>
+
+        <CheckBox
+            android:id="@+id/check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milk"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorTxt"
+            android:textStyle="bold"
+            android:text="Quantity:"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/minus"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:text="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        android:textSize="20sp"
+        android:text="ORDER"/>
+
+</LinearLayout>
